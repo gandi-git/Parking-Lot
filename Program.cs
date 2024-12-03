@@ -61,9 +61,12 @@ class Program
 
         public void CheckFull()
         {
-            if (lotMobil.Count >= 20 && lotMotor.Count >= 20)
+            if (lotMobil.Count >= 20)
             {
-                Console.WriteLine("Lot parkir penuh!");
+                Console.WriteLine("Lot parkir Mobil penuh!");
+            }
+            else if (lotMotor.Count >= 20) {
+                Console.WriteLine("Lot parkir Motor penuh!");
             }
             else
             {
